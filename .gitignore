@@ -25,3 +25,14 @@ composer.phar
 phpunit.phar
 # local phpunit config
 /phpunit.xml
+
+
+assets/*
+!assets/.gitignore
+
+protected/runtime/*
+!protected/runtime/.gitignore
+
+node_modules
+
+/protected/vendor/

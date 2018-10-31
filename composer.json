@@ -89,7 +89,7 @@
             "php": "5.6"
         },
         "process-timeout": 1800,
-        "vendor-dir": "vendor"
+        "vendor-dir": "protected/vendor"
     },
     "scripts": {
         "post-create-project-cmd": [
@@ -98,14 +98,13 @@
         "post-install-cmd": [
             "PhantomInstaller\\Installer::installPhantomJS",
             "Codeception\\c3\\Installer::copyC3ToRoot",
-            "find ./web/assets/* ! -name '.gitignore' | xargs rm -rf",
-            "find ./runtime/* ! -name '.gitignore' | xargs rm -rf"
+            "find ./assets/* ! -name '.gitignore' | xargs rm -rf",
+            "find ./protected/runtime/* ! -name '.gitignore' | xargs rm -rf"
         ],
         "post-update-cmd": [
             "PhantomInstaller\\Installer::installPhantomJS",
             "Codeception\\c3\\Installer::copyC3ToRoot",
             "find ./web/assets/* ! -name '.gitignore' | xargs rm -rf",
-            "find ./runtime/* ! -name '.gitignore' | xargs rm -rf"
         ]
     },
     "extra": {
