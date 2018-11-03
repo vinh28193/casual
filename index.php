@@ -17,4 +17,4 @@ $config = yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/protected/config/web.php')
 );
 
-(new yii\web\Application($config))->run();
+(new \application\components\Application($config))->run();

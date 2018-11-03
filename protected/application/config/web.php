@@ -2,9 +2,8 @@
 
 return [
     'id' => 'basic',
-    'controllerNamespace' => 'application\\controllers',
     'bootstrap' => ['log'],
-    'layoutPath' => '@application/views/layouts',
+    'layoutPath' => '@application/layouts',
     'components' => [
         'request' => [
             'class' => 'yii\web\Request',
