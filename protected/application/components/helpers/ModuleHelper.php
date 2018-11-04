@@ -1,15 +1,18 @@
 <?php
-
+/**
+ *
+ */
 namespace application\components\helpers;
 
 use Yii;
 
 /**
- * Class BaseUtilityHelper
+ * Class ModuleHelper
  * @package application\components\helpers
  */
-class BaseUtilityHelper
+class ModuleHelper
 {
+
     /**
      * @param $directory
      * @param string $name config file name

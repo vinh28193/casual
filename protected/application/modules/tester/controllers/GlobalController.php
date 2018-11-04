@@ -4,7 +4,7 @@
 namespace application\modules\tester\controllers;
 
 use Yii;
-use application\components\helpers\UtilityHelper;
+use application\components\helpers\ModuleHelper;
 use yii\web\Controller;
 
 class GlobalController extends Controller
@@ -16,7 +16,7 @@ class GlobalController extends Controller
 
     public function actionTestScanDirectory(){
         Yii::setAlias('@testerModulesPath','@application/modules/tester/modules');
-        var_dump(UtilityHelper::scanConfigFile('@testerModulesPath'));
+        var_dump(ModuleHelper::scanConfigFile('@testerModulesPath'));
         return;
     }
 }
