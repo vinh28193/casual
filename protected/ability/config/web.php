@@ -7,7 +7,7 @@ return [
         function($app){
             /** @var $app \ability\components\Application */
             Yii::setAlias('@testerModulesPath','@ability/modules');
-            $scanned = \ability\components\helpers\ModuleHelper::scanConfigFile('@testerModulesPath');
+            $scanned = \ability\helpers\ModuleHelper::scanConfigFile('@testerModulesPath');
             foreach ($scanned as $basePath => $config){
                 $moduleManger = new \ability\components\ModuleManager();
                 $moduleManger->register($basePath,$config);

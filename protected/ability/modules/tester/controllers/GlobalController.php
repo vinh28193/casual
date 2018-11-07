@@ -5,7 +5,7 @@ namespace ability\modules\tester\controllers;
 
 use Yii;
 use yii\web\Controller;
-use ability\components\helpers\UtilityHelper;
+use ability\helpers\UtilityHelper;
 
 class GlobalController extends Controller
 {

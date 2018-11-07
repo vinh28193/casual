@@ -1,6 +1,6 @@
 <?php
 
-namespace ability\components\helpers;
+namespace ability\helpers;
 
 use Yii;
 use yii\helpers\Html;
@@ -8,7 +8,7 @@ use yii\helpers\VarDumper;
 
 /**
  * Class UtilityHelper
- * @package ability\components\helpers
+ * @package ability\helpers
  */
 class UtilityHelper
 {

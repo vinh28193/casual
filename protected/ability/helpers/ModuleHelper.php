@@ -2,7 +2,7 @@
 /**
  *
  */
-namespace ability\components\helpers;
+namespace ability\helpers;
 
 use Yii;
 use yii\helpers\FileHelper;
@@ -10,7 +10,7 @@ use yii\helpers\ArrayHelper;
 
 /**
  * Class ModuleHelper
- * @package ability\components\helpers
+ * @package ability\helpers
  */
 class ModuleHelper
 {
