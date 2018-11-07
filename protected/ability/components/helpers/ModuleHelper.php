@@ -5,6 +5,8 @@
 namespace ability\components\helpers;
 
 use Yii;
+use yii\helpers\FileHelper;
+use yii\helpers\ArrayHelper;
 
 /**
  * Class ModuleHelper
@@ -34,4 +36,8 @@ class ModuleHelper
         return $config;
     }
 
+    public static function findAllFileInDirectory($directory,$options = []){
+        $options = ArrayHelper::merge(['recursive' => false],$options);
+        return FileHelper::findFiles($directory, $options);
+    }
 }

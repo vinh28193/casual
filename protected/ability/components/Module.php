@@ -20,4 +20,10 @@ class Module extends \yii\base\Module
         parent::init();
     }
 
+    public function getAssetBundles(){
+
+    }
+    public function getAccess(){
+
+    }
 }
