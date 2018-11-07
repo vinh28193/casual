@@ -14,11 +14,7 @@ $config = [
             'charset' => 'utf8',
         ],
     ],
-    'modules' => [
-        'tester' => [
-            'class' => 'application\modules\tester\Module',
-        ],
-    ]
+    'modules' => []
 ];
 
 // configuration adjustments for 'dev' environment
@@ -32,7 +28,7 @@ $config['modules']['gii'] = [
     'class' => 'yii\gii\Module',
     'generators' => [
         'test-module' => [
-            'class' => 'application\components\gii\generators\module\Generator'
+            'class' => 'ability\components\gii\generators\module\Generator'
         ]
     ]
 ];
