@@ -143,6 +143,10 @@ EOD;
             $this->render("view.php")
         );
 
+        $files[] = new CodeFile(
+            $modulePath . '/config.php',
+            $this->render("config.php")
+        );
         return $files;
     }
 
