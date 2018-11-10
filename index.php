@@ -7,14 +7,14 @@ defined('YII_ENV') or define('YII_ENV', 'dev');
 require(__DIR__ . '/protected/vendor/autoload.php');
 require(__DIR__ . '/protected/vendor/yiisoft/yii2/Yii.php');
 
-require(__DIR__ . '/protected/ability/config/bootstrap.php');
+require(__DIR__ . '/protected/pubhub/config/bootstrap.php');
 require(__DIR__ . '/protected/config/bootstrap.php');
 
 $config = yii\helpers\ArrayHelper::merge(
-    require(__DIR__ . '/protected/ability/config/main.php'),
-    require(__DIR__ . '/protected/ability/config/web.php'),
+    require(__DIR__ . '/protected/pubhub/config/main.php'),
+    require(__DIR__ . '/protected/pubhub/config/web.php'),
     require(__DIR__ . '/protected/config/main.php'),
     require(__DIR__ . '/protected/config/web.php')
 );
 
-(new \ability\components\Application($config))->run();
+(new \pubhub\components\Application($config))->run();

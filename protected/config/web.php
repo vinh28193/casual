@@ -28,7 +28,7 @@ $config['modules']['gii'] = [
     'class' => 'yii\gii\Module',
     'generators' => [
         'test-module' => [
-            'class' => 'ability\components\gii\generators\module\Generator'
+            'class' => 'pubhub\components\gii\generators\module\Generator'
         ]
     ]
 ];
