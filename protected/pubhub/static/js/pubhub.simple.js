@@ -1,13 +1,11 @@
 
-var simple = (function ($) {
-    var pub = {
-        id: 'simple',
-        hello: function (message) {
-            say(message);
-        }
+
+pubhub.module('simple', function (module, require, $) {
+    var log = require('log') || console;
+    var hello = function(){
+        log.warn('module Simple is loaded')
     };
-    var say = function (message) {
-        alert(message);
-    };
-    return pub;
-})(jQuery);
+    module.export({
+        hello: hello,
+    });
+});

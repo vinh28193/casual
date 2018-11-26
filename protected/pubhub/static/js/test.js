@@ -1,4 +1,3 @@
 
 
-simple.hello('Hello World');
-console.log(simple);
+console.log(pubhub.modules);

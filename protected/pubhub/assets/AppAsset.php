@@ -21,8 +21,11 @@ class AppAsset extends AssetBundle
         'css/site.css'
     ];
     public $js = [
+        'js/pubhub.core.js',
+        'js/pubhub.util.js',
+        'js/pubhub.log.js',
         'js/pubhub.simple.js',
-        //'js/test.js'
+        'js/test.js'
     ];
 
     public $depends = [
