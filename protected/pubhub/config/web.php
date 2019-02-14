@@ -12,6 +12,9 @@ return [
                 $moduleManger = new \pubhub\components\ModuleManager();
                 $moduleManger->register($basePath,$config);
             }
+            $app->setAliases([
+                '@bower' => '@vendor/bower-asset',
+            ]);
         }
     ],
     'layoutPath' => '@pubhub/layouts',
